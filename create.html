@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stories From Hawkins</title>
+        <link rel="stylesheet" href="blogstyles.css">
+
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posts.html">Directory</a></li>
+            </ul>
+        </nav>
+        <div id="container">
+        <header>
+            <!-- <img src="images/penandpaper.jpg" alt="Pen laying on notebooks" width="500" height="250"> -->
+            <h1>Create a New Post</h1>
+        </header>
+        </div>
+        <main>
+        <p>Use the form below to create a new blog entry.</p>
+        <p><label>Name: <input type="text" maxlength="50"></label></p>
+        <p><label>Password: <input type="password" maxlength="50"></label></p>
+        <p><label>Post: <br>
+        <textarea name="blog_entry" placeholder="Share your story." rows="5" cols="50"></textarea></label></p>
+        <p><label>Upload a picture to add to your post:<br>
+        <input type="file" name="picture"></label></p>
+        <p>Current mood: <input type="text" list="Mood" name="currmood"></p>
+        <datalist id="Mood">
+            <option value="Happy">
+            <option value="Sad">
+            <option value="Angry">
+            <option value="Excited">
+            <option value="Annoyed">
+            <option value="Hopeful">
+            <option value="Positive">
+        </datalist>
+        <p>Allow comments?</p>
+            <input type="radio" id="yes" name="allow_comments" value="Yes">
+            <label for="yes">Yes</label>
+            <br>
+            <input type="radio" id="no" name="allow_comments" value="No">
+            <label for="no">No</label>
+        <p>Select a date to publish this post:</p>
+        <input type="date" name="publishdate" value="2019-10-01">
+        </main>
+    </body>
+</html>

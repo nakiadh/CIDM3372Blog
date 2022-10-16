@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Andale Mono, monospace;
+    background: #949596 url(images/cloud.png) no-repeat center 140px fixed;
+}
+
+nav {
+    padding: 25px 0 0 0;
+    height: 10em;
+}
+
+main {
+    padding: 50px 50px;
+}
+
+header {
+    color:rgb(99, 6, 6);
+    background: url(images/fullmoon.jpg) no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+header p {
+    color: rgb(147, 144, 144)
+}
+
+a {
+    text-decoration: none
+}
+
+a:link {
+    color: rgb(13, 83, 73);
+}
+
+a:visited {
+    color: #ab0707;
+}
+
+a:focus, a:hover {
+    color: #0a0a0a;
+    background-color: #fff;
+}
+
+a:active {
+    color: #056d09;
+    background-color: #fff;
+}
+
+h1 {
+    font: bold 2.5em courier, monospace;
+}
+
+caption {
+    font-size: 24pt;
+}
+
+table {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    text-align: justify;
+}
+
+figcaption {
+    color:rgb(99, 6, 6);
+    font: italic small Andale Mono, monospace;
+}
+
+img[src*="pumpkincandy"] {
+    -webkit-shape-outside: circle(150px);
+    shape-outside: circle(150px);
+}
+
+section {
+    padding: 15px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li a {
+    display: block;
+    border-radius: .5em; 
+    padding: .5em 1em;
+    margin: .5em;
+}
+
+details {
+    padding: 1em;
+}
+
+footer {
+    padding: 2em;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: auto auto 5em;
+    grid-template-columns: minmax(25em, 1fr) 16em;
+    grid-template-areas: "banner banner";
+}
+
+header {
+    grid-area: banner;
+}
